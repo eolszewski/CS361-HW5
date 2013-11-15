@@ -1,0 +1,55 @@
+Michael Goldstein
+mag4952
+
+Eric Olszewski
+eao448
+
+The algorithm builds a full dictionary of all possible mangles of the dictionary words and then checks each of these against the encrypted password of each user.
+
+Passwords 1
+
+Time to set up dictionary: 0.0 seconds
+michael : michael : 0.049099294 seconds
+abigail : liagiba : 3.60284756 seconds
+samantha : amazing : 1.51602E-4 seconds
+tyler : eeffoc : 0.608753984 seconds
+alexander : squadro : 2.70234562 seconds
+james : icious : 3.009627809 seconds
+benjamin : abort6 : 0.012916706 seconds
+morgan : rdoctor : 0.918215321 seconds
+jennifer : doorrood : 0.927950019 seconds
+nicole : keyskeys : 1.590757733 seconds
+evan : Impact : 1.422404629 seconds
+jack : sATCHEL : 2.492237458 seconds
+victor : THIRTY : 2.894556798 seconds
+caleb : teserP : 2.143097269 seconds
+nathan : sHREWDq : 2.540632047 seconds
+connor : enoggone : 1.269986131 seconds
+rachel : obliqu3 : 1.938637809 seconds
+dustin : litpeR : 2.353083268 seconds
+maria : Salizar : 3.504134901 seconds
+paige : NOPASSWORDFOUND
+
+Passwords 2
+
+Time to set up dictionary: 0.0 seconds
+michael : tremors : 0.051908207 seconds
+abigail : Saxon : 2.922165101 seconds
+samantha : cOnNeLlY : 3.20483317 seconds
+tyler : eltneg : 1.312602346 seconds
+alexander : NOPASSWORDFOUND
+james : enchant$ : 1.001825002 seconds
+benjamin : soozzoos : 3.155469521 seconds
+morgan : dIAMETER  : 0.844490831 seconds
+jennifer : NOPASSWORDFOUND
+nicole : INDIGNITY : 1.469206303 seconds
+evan : ^bribed : 0.416506744 seconds
+jack : ellows : 3.129626081 seconds
+victor : NOPASSWORDFOUND
+caleb : zoossooz : 3.134621786 seconds
+nathan : uPLIFTr : 2.979685938 seconds
+connor: nosral : 3.407202407 seconds
+rachel : NOPASSWORDFOUND
+dustin : NOPASSWORDFOUND
+maria : NOPASSWORDFOUND
+paige : NOPASSWORDFOUND
