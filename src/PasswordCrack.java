@@ -12,7 +12,10 @@ public class PasswordCrack {
 	public static void main(String args[]) {
 		dictionaryInput = args[0];
 		passwordsInput = args[1];
+		long start = System.nanoTime();    
 		setupDictionary();
+		long elapsedTime = System.nanoTime() - start;
+		System.out.println("Time to set up dictionary: " + (double)(elapsedTime/1000000000) + " seconds");
 		crackPasswords();
 	}
 
@@ -117,18 +120,19 @@ public class PasswordCrack {
 		
 		mangle();
 		
-		for(int i = 0; i < salts.size(); i++)
+		for(int i = 0; i < salts.size(); i++) 
         	System.out.println(crack(salts.get(i), hashes.get(i)));
 	}
 
 	private static String crack(String salt, String hash) {
+		long start = System.nanoTime();    
 		for(int i = 0; i < fullDictionary.size(); i++) {
 			if(fullDictionary.get(i).length() > 8) {
 				if (jcrypt.crypt(salt, fullDictionary.get(i).substring(0, 8)).equals(hash))
-					return fullDictionary.get(i);
+					return fullDictionary.get(i) + " : " + (double)(System.nanoTime() - start)/1000000000 + " seconds";
 			} else {
 				if (jcrypt.crypt(salt, fullDictionary.get(i)).equals(hash))
-					return fullDictionary.get(i);
+					return fullDictionary.get(i) + " : " + (double)(System.nanoTime() - start)/1000000000 + " seconds";
 			}
 		}
 		return "NOPASSWORDFOUND";
